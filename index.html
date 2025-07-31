@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voter ID Application Simulation</title>
+</head>
+<body>
+
+    <div>
+        <h1>Voter ID Application Form (Simulation)</h1>
+
+        <form action="#" method="post">
+
+            <div>
+                <label for="fullName">Full Name (First, Middle, Last):</label>
+                <input type="text" id="fullName" name="fullName" placeholder="As per official documents" required>
+            </div>
+
+            <div>
+                <label for="dob">Date of Birth:</label>
+                <input type="date" id="dob" name="dob" required>
+            </div>
+
+            <div>
+                <label for="gender">Gender:</label>
+                <select id="gender" name="gender" required>
+                    <option value="">Select Gender</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+
+            <div>
+                <label for="fatherHusbandName">Father's/Husband's Name:</label>
+                <input type="text" id="fatherHusbandName" name="fatherHusbandName" required>
+            </div>
+
+            <div>
+                <label for="address">Residential Address:</label>
+                <textarea id="address" name="address" rows="4" placeholder="House No., Street, Area, City, District, State, Pincode" required></textarea>
+            </div>
+
+            <div>
+                <label for="assemblyConstituency">Assembly Constituency:</label>
+                <input type="text" id="assemblyConstituency" name="assemblyConstituency" required>
+            </div>
+
+            <div>
+                <label>Proof of Identity (e.g., Aadhaar Card, Passport, Driving License):</label>
+                <input type="file" id="idProof" name="idProof" accept=".pdf, .jpg, .jpeg, .png" required>
+            </div>
+
+            <div>
+                <label>Proof of Address (e.g., Electricity Bill, Water Bill, Bank Passbook):</label>
+                <input type="file" id="addressProof" name="addressProof" accept=".pdf, .jpg, .jpeg, .png" required>
+            </div>
+
+            <div>
+                <p>Upload Recent Passport-Size Color Photograph (4.5 CM X 3.5 CM)</p>
+                <input type="file" id="photograph" name="photograph" accept=".jpg, .jpeg, .png" required>
+            </div>
+
+            <div>
+                <input type="checkbox" id="declaration" name="declaration" required>
+                <label for="declaration">I declare that all the information provided above is true and correct to the best of my knowledge and belief.</label>
+            </div>
+
+            <button type="submit">Submit Application</button>
+        </form>
+
+        <p>This is a simulated form for educational purposes and does not process actual voter ID applications. For official voter registration, please visit the {Link: Voters' Services Portal https://voters.eci.gov.in/HomePage} or download the Voter Helpline App.</p>
+    </div>
+
+</body>
+</html>
